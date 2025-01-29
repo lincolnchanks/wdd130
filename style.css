@@ -1,18 +1,21 @@
 body{
     text-align: center;
+    background-color: darkgreen;
+    font-size: 30px;
+    color:aliceblue;
+}
+header{
+    background-color: darkgrey;
+    color:darkgreen;
+    font-size: 30px;
+}
+footer{
+    background-color: darkgrey;
+    color:black;
+}
+h1{
+    font-size: 2em;
 }
 nav{
     margin-bottom: 15px;
-    font-size: 30px;
-}
-main{
-    background-color: aquamarine;
-}
-
-h1{
-    font-size: 60px;
-}
-p {
-    font-size: 30px;
-    color: brown;
 }
