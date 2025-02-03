@@ -8,9 +8,6 @@ body {
 header{
     background-color: #191516;
 }
-.logo{
-    width: 80px;
-}
 nav a{
     text-align: center;
     color: #058ed9;
@@ -47,7 +44,7 @@ h4{
 main section{
     text-align: center;
 }
-.icon{
+.icon, .logo{
     width: 80px;
 }
 #background{
