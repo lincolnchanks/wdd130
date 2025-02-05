@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+main img {
+    max-width: 1000px;
+    display: block;
+    margin: 0 auto;
+}
+footer img{
+    max-width: 1000px;
+    width: 20%;
+    margin: 25px;
+    border: 10px solid #444444;
+    border-radius: 50%;
+}
+footer{
+    text-align: center;
+    background-color: #737373;
+    padding: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
