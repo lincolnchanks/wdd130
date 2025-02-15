@@ -1,0 +1,13 @@
+section img {
+    position: fixed;
+    width: 100px;
+    top: 100px;
+    left: 200px;
+    z-index: 0;
+}
+section h2{
+    position: sticky;
+}
+section p {
+    width: 500px;
+}
