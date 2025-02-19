@@ -9,13 +9,17 @@ header{
     color:darkgreen;
     font-size: 30px;
 }
-footer{
-    background-color: darkgrey;
-    color:black;
-}
 h1{
     font-size: 2em;
 }
 nav{
     margin-bottom: 15px;
+}
+.ice-links {
+    background-color: darkgrey;
+    color: darkgreen;
+}
+footer{
+    background-color: darkgrey;
+    color:black;
 }
