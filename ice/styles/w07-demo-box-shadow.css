@@ -1,0 +1,12 @@
+.box-shadow {
+    box-shadow: 10px 10px 30px #004400;
+}
+
+body {
+    /* background-color: black; */
+}
+
+h1 {
+    /* text-shadow: [left/right] [top/bottom] [blur amount] [color] */
+    text-shadow: 1px 1px 2px lime;
+}

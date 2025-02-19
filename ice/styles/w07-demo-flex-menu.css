@@ -1,0 +1,31 @@
+* {
+    /* margin: 0; */
+}
+header {
+    background-color: darkblue;
+}
+.logo {
+    width: 50px;
+}
+a {
+    color: white;
+    text-decoration: none;
+    padding: 0.8em;
+    display: inline-block;
+}
+a:hover {
+    color: black;
+    background-color: white;
+}
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+#flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+#flex-container > section {
+    flex: 200px;
+}
