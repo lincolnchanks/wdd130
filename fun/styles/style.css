@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+}
+header {
+    background-color: #1C3144;
+}
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+a {
+    text-decoration: none;
+    padding: 0.8em;
+    display: inline-block;
+    color: white;
+}
+a:hover {
+    background-color: #C3D898;
+    color: black;
+}
+section {
+    display: flex;
+}
+img {
+    width: 300px;
+}
