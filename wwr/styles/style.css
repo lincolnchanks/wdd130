@@ -33,12 +33,12 @@ nav a{
     padding: 35px;
 }
 nav a:hover{
-    background-color: var(--background-color);
+    background-color: var(--button-color);
     color: var(--text-color);
 }
 #logo_link {
     padding-top: 5px;
-    justify-self: center;
+    justify-self: center; 
     align-self: center;
 }
 #hero {
