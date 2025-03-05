@@ -1,0 +1,56 @@
+body {
+    background-color: black;
+}
+#content {
+    background-color: white;
+    border: 5px black solid;
+    border-radius: 25px;
+    margin: 0 auto;
+    width: 300px;
+    overflow: hidden;
+}
+#hero-img img {
+    width: 100%;
+    padding: 0px;
+}
+main {
+    text-align: center;
+}
+#date {
+    margin: 0;
+    color: #476290;
+}
+#head {
+    font-size: 1.5em;
+    margin: 5px;
+}
+#description {
+    color: #8c818c;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.footer-box {
+    padding: 15px;
+    text-align: center;
+    width: 100px;
+    background-color: #3f5b8b;
+    color: white;
+}
+.top {
+    font-size: 1.4em;
+    margin: 0;
+}
+.bottom {
+    font-size: 0.7em;
+    margin: 0;
+}
+sup {
+    position: relative;
+    vertical-align: top;
+}
+footer {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
