@@ -4,6 +4,7 @@
     --background-color: #69b578;
     --text-color: black;
     --button-color: #a72608;
+    --background-color-transparent: #69b578DD;
 }
 
 body {
@@ -18,9 +19,12 @@ body {
     margin: 0 auto;
 }
 header{
-    background-color: var(--background-color);
+    background-color: var(--background-color-transparent);
     display: grid;
     grid-template-columns: 150px auto;
+}
+header.not-transparent {
+    background-color: var(--background-color);
 }
 nav {
     display: flex;
