@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 0px;
+}
+img {
+    max-width: 100%;
+}
+body {
+    background-color: whitesmoke;
+    width: 1000px;
+    border: 5px solid black;
+    margin: 0 auto;
+}
+header {
+    width: 900px;
+    margin: 10px auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+#logo-img {
+    width: 150px;
+}
+nav {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-evenly;
+}
+nav a {
+    border: 5px solid black;
+    padding: 10px;
+    padding-left: 65px;
+    padding-right: 65px;
+    text-decoration: none;
+    color: black;
+    background-color: cornflowerblue;
+}
+nav a:hover {
+    color: black;
+    background-color: whitesmoke;
+}
+#home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#cakes-img {
+    grid-row: 1/2;
+}
+footer {
+    display: flex;
+    align-items: center;
+}
+#social {
+    justify-items: end;
+}
+.social-icon {
+    width: 100px;
+}

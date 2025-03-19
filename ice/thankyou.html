@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You For Your Comment</title>
+    <style>
+        * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    body {
+        background-color: aqua;
+    }
+    h1 {
+        text-align: center;
+        margin: 10px;
+    }
+    label, input, textarea, button {
+        display: block;
+        width: 20rem;
+    }
+    input, textarea, button {
+        margin-bottom: 1rem;
+    }
+    textarea {
+        max-width: 20rem;
+    }
+    /* PARC: Proximity, Alignment, Repetition, Contrast */
+    #content {
+        background-color: whitesmoke;
+        border: 5px solid black;
+        width: 24rem;
+        padding: 2rem;
+        margin: 20px auto;
+        justify-items: center;
+    }
+    </style>
+</head>
+<body>
+    <h1>Thank you for your submission. We'll get back to you as soon as possible.</h1>
+    <div id="content">
+        <h1>Contact Us</h1>
+        <form action="thankyou.html" class="contact-form">
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname">
+            
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname">
+            
+            <label for="comment_box">Leave a Comment:</label>
+            <textarea name="comment_box" id="comment_box"></textarea>
+            
+            <button type="submit">Request Information</button>
+        </form>
+    </div>
+</body>
+</html>
