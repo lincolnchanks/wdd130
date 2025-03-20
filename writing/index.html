@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Lincoln C. Hanks | Writing and Worldbuilding</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <header>
-        <a id="logo-link" href="index.html">
-            <img src="images/logo2.png" alt="My logo">
-        </a>
+        <div id="logo">
+            <a id="logo-link" href="index.html">
+                <img src="images/logo2.png" alt="My logo">
+            </a>
+        </div>
         <nav>
             <a href="index.html">Home</a>
             <a href="worldbuilding.html">Worldbuilding</a>
@@ -17,28 +20,37 @@
         </nav>
     </header>
     <section id="hero-grid">
-        <h1>Discover New Worlds</h1>
-        <p>From the red forests of Dronik to the windswept plains of the Khengem Valley, there are stories to be found everywhere. Click the box to learn more.</p>
-        <button>Explore</button>
-        <button>Read More</button> <!-- I might replace the buttons with normal p's but with class="button" -->
-        <img src="images/dronik-planet.webp" alt="A picture of the planet Dronik, hanging in its orbit in space.">
+        <div id="hero-info">
+            <h1>Discover New Worlds</h1>
+            <p>From the red forests of Dronik to the windswept plains of the Khengem Valley, there are stories to be found everywhere. Click the box to learn more.</p>
+            <div id="explore-button-box">
+                <a id="explore-button" href="worldbuilding.html">Explore</a>
+            </div>
+            <!-- <button>Explore</button>
+            <button>Read More</button> I might replace the buttons with normal p's but with class="button" -->
+        </div>
+        <div id="home-hero-img">
+            <img src="images/dronik-planet.webp" id="dronik-planet" alt="A picture of the planet Dronik, hanging in its orbit in space.">
+        </div>
     </section>
     <section id="about">
-        <img src="images/dronik-shrine-active.webp" alt="A shrine activating for the first time in centuries.">
-        <h1>About</h1>
-        <p>Hi everyone, my name is Lincoln Hanks! I’m a college freshman studying Computer Science, and I’m an aspiring sci-fi/fantasy author. I’ve had a passion for storytelling since I was young, and now that I’m older I plan to take those stories and finally put them on paper.</p>
-        <div id="links">
-            <div id="link">
-                <h2>Secrets</h2>
-                <img src="images/ringbearer-ruins-wideshot.webp" alt="Ringbearer Ruins">
-            </div>
-            <div id="link">
-                <h2>Adventure</h2>
-                <img src="images/blood-moon.webp" alt="Blood Moon">
-            </div>
-            <div id="link">
-                <h2>Mystery</h2>
-                <img src="" alt="">
+        <img id="headshot" src="images/selfie_image.jpg" alt="Headshot of myself">
+        <div id="about-desc">
+            <h1>About</h1>
+            <p>Hi everyone, my name is Lincoln Hanks! I’m a college freshman studying Computer Science, and I’m an aspiring sci-fi/fantasy author. I’ve had a passion for storytelling since I was young, and now that I’m older I plan to take those stories and finally put them on paper.</p>
+            <div id="gallery">
+                <div class="showcase">
+                    <h2>Secrets</h2>
+                    <img class="showcase-img" src="images/mount-constellations.webp" alt="Mount of Constellations">
+                </div>
+                <div class="showcase">
+                    <h2>Adventure</h2>
+                    <img class="showcase-img" src="images/blood-moon.webp" alt="Blood Moon">
+                </div>
+                <div class="showcase">
+                    <h2>Magic</h2>
+                    <img class="showcase-img" src="images/dronik-shrine-active.webp" alt="A shrine activating for the first time in centuries.">
+                </div>
             </div>
         </div>
     </section>
