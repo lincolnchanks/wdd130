@@ -80,11 +80,13 @@ nav a:hover {
 }
 #hero-info h1 {
     grid-row: 1/2;
+    text-align: center;
 }
 #hero-info p {
     grid-row: 2/3;
     margin-top: 30px;
     margin-bottom: 30px;
+    text-align: center;
 }
 #explore-button {
     text-decoration: none;
@@ -123,8 +125,12 @@ nav a:hover {
     padding: 30px;
     align-content: center;
 }
+#about-desc h1 {
+    text-align: center;
+}
 #about-desc p {
     margin-top: 30px;
+    text-align: center;
 }
 #headshot {
     display: block;
