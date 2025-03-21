@@ -133,6 +133,7 @@
   background-color: red;
 } 
 .green5 { 
+  /* Set the image or "breaker" to float: left... */
   width: 200px;
   height: 200px; 
   background-color: green;
