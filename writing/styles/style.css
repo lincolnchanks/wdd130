@@ -212,13 +212,16 @@ footer a {
 }
 #bookmarks {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     padding: 30px;
 }
 .bookmark {
     padding: 15px;
     transition: transform .5s;
+}
+#bookmarks section.active {
+    background-color: #D7263D;
 }
 .bookmark:hover {
     opacity: .6;
@@ -238,6 +241,9 @@ footer a {
     padding: 30px;
     align-self: center;
 }
+.tabcontent {
+    display: none;
+}
 #descriptions {
     padding: 30px;
 }
@@ -245,9 +251,10 @@ footer a {
     display: block;
     width: 700px;
 }
-#dro-intro {
+#dro-intro, #jed-intro, #vul-intro {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    /* margin-top: 10px; */
 }
 #dro-intro section, #vul-intro section {
     padding-right: 30px;
@@ -273,20 +280,10 @@ footer a {
     grid-column: 1/4;
     margin-top: -30px;
 }
-#jed-intro {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 30px;
-}
 #jed-intro section {
     padding-left: 30px;
 }
 #jed-magic {
     grid-column: 1/4;
     margin-bottom: -30px;
-}
-#vul-intro {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 30px;
 }

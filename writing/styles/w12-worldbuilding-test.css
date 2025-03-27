@@ -215,14 +215,14 @@ footer a {
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     padding: 30px;
-}
+} /* Ported to main CSS */
 .bookmark {
     padding: 15px;
     transition: transform .5s;
 }
 #bookmarks section.active {
     background-color: #D7263D;
-}
+} /* Ported to main CSS */
 .bookmark:hover {
     opacity: .6;
     transform: scale(1.1);
@@ -246,7 +246,7 @@ footer a {
 }
 .tabcontent {
     display: none;
-}
+} /* Ported to main CSS */
 .intro-img {
     display: block;
     width: 700px;
