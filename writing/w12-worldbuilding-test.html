@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Worldbuilding | Lincoln C. Hanks | Writing and Worldbuilding</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/w12-worldbuilding-test.css">
 </head>
 <body>
     <header>
@@ -25,35 +25,23 @@
     </div>
     <div id="top-bar">
         <div id="bookmarks">
-            <div class="bookmark">
+            <div id="default-open" class="bookmark" onclick="openWorld(event, 'Dronik')">
                 <h3>Dronik</h3>
-                <a href="#dronik">
-                    <img class="bookmark-img" src="images/dronik.webp" alt="A forest on Dronik.">
-                </a>
+                <img class="bookmark-img" src="images/dronik.webp" alt="A forest on Dronik.">
             </div>
-            <div class="bookmark">
+            <div class="bookmark" onclick="openWorld(event, 'Jedas')">
                 <h3>Jedas</h3>
-                <a href="#jedas">
-                    <img class="bookmark-img" src="images/idzatsi.webp" alt="The port metropolis of Idzatsi, seen from above.">
-                </a>
+                <img class="bookmark-img" src="images/idzatsi.webp" alt="The port metropolis of Idzatsi, seen from above.">
             </div>
-            <div class="bookmark">
+            <div class="bookmark" onclick="openWorld(event, 'Vulcanica')">
                 <h3>Vulcanica</h3>
-                <a href="#vulcanica">
-                    <img class="bookmark-img" src="images/vulcanica.webp" alt="Mount Jechem, on the verge of eruption.">
-                </a>
-            </div>
-            <div class="bookmark">
-                <h3>Writing</h3>
-                <a href="written-works.html">
-                    <img class="bookmark-img" src="images/keep-sana'e.webp" alt="The interior of Keep Sana'e.">
-                </a>
+                <img class="bookmark-img" src="images/vulcanica.webp" alt="Mount Jechem, on the verge of eruption.">
             </div>
         </div>
-        <p>Here's a filler text for the intro to the worldbuilding page: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa dicta asperiores nam quis nulla qui, debitis, voluptate deleniti tenetur sunt minus facere error inventore ipsam, quaerat sequi maiores ducimus nihil?</p>
+        <p>The universe of my fantasy projects is vast, and there are endless horizons to explore. Below, you can explore three of those horizons, including their history, their magic systems, and the unique stories related to each of them.</p>
     </div>
     <div id="descriptions">
-        <div id="dronik">
+        <div id="Dronik" class="tabcontent">
             <div id="dro-intro">
                 <section>
                     <h1>Dronik (Ringbearer)</h1>
@@ -83,7 +71,7 @@
                 </section>
             </div>
         </div>
-        <div id="jedas">
+        <div id="Jedas" class="tabcontent">
             <div id="jed-intro">
                 <img class="intro-img" src="images/idzatsi.webp" alt="The port metropolis of Idzatsi, seen from above.">
                 <section>
@@ -111,7 +99,7 @@
                 </section>
             </div>
         </div>
-        <div id="vulcanica">
+        <div id="Vulcanica" class="tabcontent">
             <div id="vul-intro">
                 <section>
                     <h1>Vulcanica (Weather The Storm)</h1>
@@ -135,7 +123,6 @@
             </div>
         </div>
     </div>
-    
     <footer>
         <p>&copy; 2025 Lincoln Hanks</p>
         <a href="site-plan.html">Site Plan</a>
@@ -145,5 +132,30 @@
             <img src="images/instagram.png" alt="instagram icon">
         </div>
     </footer>
+    <script>
+        function openWorld(evt, worldName) {
+            var i, tabcontent, tablinks;
+
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            
+            // Whatever tablink was just clicked, it will call openWorld
+            // openWorld will find whatever tab content has its ID, and set that display to block.
+            // openWorld also sets the clicked tablink to a class of "active".
+            // I'm not sure that we need the active class anymore, but I'll keep it just in case.
+            document.getElementById(worldName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Automatically clicks the default tab when the page is loaded.
+        document.getElementById("default-open").click();
+    </script>
 </body>
 </html>

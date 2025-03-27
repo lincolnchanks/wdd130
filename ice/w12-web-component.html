@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 12 | Web Component Practice</title>
+    <link rel="stylesheet" href="styles/w12-web-component.css">
+</head>
+<body>
+    <!-- Tab Links -->
+    <div class="tab"> <!-- Replace openCity with openWorld later -->
+        <button class="tablinks" onclick="openWorld(event, 'Dronik')">Dronik</button>
+        <button class="tablinks" onclick="openWorld(event, 'Jedas')">Jedas</button>
+        <button class="tablinks" onclick="openWorld(event, 'Vulcanica')">Vulcanica</button>
+    </div>
+    <!-- Tab Content -->
+    <div id="Dronik" class="tabcontent">
+        <h3>Dronik</h3>
+        <p>Dronik is the planet of Ringbearer.</p>
+    </div>
+    <div id="Jedas" class="tabcontent">
+        <h3>Jedas</h3>
+        <p>Jedas is the planet of The Ice Mage.</p>
+    </div>
+    <div id="Vulcanica" class="tabcontent">
+        <h3>Vulcanica</h3>
+        <p>Vulcanica is the planet of Weather The Storm.</p>
+    </div>
+    <!-- JavaScript -->
+    <script>
+        function openWorld(evt, worldName) {
+            // Declare all variables
+            var i, tabcontent, tablinks
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(worldName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>

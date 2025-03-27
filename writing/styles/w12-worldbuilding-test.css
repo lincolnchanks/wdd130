@@ -212,13 +212,16 @@ footer a {
 }
 #bookmarks {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     padding: 30px;
 }
 .bookmark {
     padding: 15px;
     transition: transform .5s;
+}
+#bookmarks section.active {
+    background-color: #D7263D;
 }
 .bookmark:hover {
     opacity: .6;
@@ -240,6 +243,9 @@ footer a {
 }
 #descriptions {
     padding: 30px;
+}
+.tabcontent {
+    display: none;
 }
 .intro-img {
     display: block;
