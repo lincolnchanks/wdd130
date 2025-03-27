@@ -259,7 +259,7 @@ footer a {
 #dro-intro section, #vul-intro section {
     padding-right: 30px;
 }
-#dro-intro section h1, #jed-intro section h1, #vul-intro section h1 {
+#dro-intro section h2, #jed-intro section h2, #vul-intro section h2 {
     margin-bottom: 30px;
 }
 .world-desc {
