@@ -184,11 +184,11 @@ footer a {
 
 /* WORLDBUILDING PAGE */
 
-#worldbuilding-hero {
+.hero {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
-#worldbuilding-hero img {
+.hero img {
     width: 100%;
     grid-column: 1/5;
     grid-row: 1/2;
@@ -196,7 +196,7 @@ footer a {
     /* margin-bottom: -50px; */
     z-index: -1;
 }
-#worldbuilding-hero h1 {
+.hero h1 {
     grid-column: 2/4;
     grid-row: 1/2;
     color: white;
@@ -286,4 +286,61 @@ footer a {
 #jed-magic {
     grid-column: 1/4;
     margin-bottom: -30px;
+}
+
+/* WRITTEN WORKS PAGE */
+
+#writing-content {
+    margin: 30px;
+}
+#writing-content img {
+    width: 100%;
+    border: 10px solid #230C0F;
+    border-radius: 10px;
+}
+#writing-top-bar {
+    background-color: #EAD637;
+    padding: 30px;
+}
+#writing-top-bar p {
+    width: 650px;
+    text-align: center;
+    margin: 0 auto;
+}
+.writing-showcase {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 50px 0px;
+    column-gap: 30px;
+}
+.writing-desc {
+    padding: 0px 30px 30px 30px;
+    text-align: center;
+}
+.writing-desc p {
+    margin-top: 15px;
+}
+.img-right {
+    justify-self: end;
+}
+#ringbearer-ruins {
+    display: block;
+    width: 300px;
+}
+.writing-button-box {
+    margin-top: 25px;
+}
+.writing-button {
+    text-decoration: none;
+    margin-top: 10px;
+    padding: 15px 30px;
+    border-radius: 7px;
+    background-color: #EAD637;
+    color: #230C0F;
+    font-family: var(--paragraph-font);
+    font-size: 1.2em;
+}
+.writing-button:hover {
+    background-color: #230C0F;
+    color: #D7263D;
 }
